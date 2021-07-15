@@ -1,0 +1,29 @@
+.company{
+	padding: 90px 0 100px;
+	&__wrapper{
+		padding: 65px 0 80px;
+		background-image: url(../img/company.png);
+		background-position: right;
+		// background-size: 740/1200 * 100%;
+		background-repeat: no-repeat;
+	}
+	&__title{
+		margin-bottom: 5px;
+	}
+	&__box{
+		background-color: rgb(255, 255, 255);
+		max-width: 570px;
+		padding: 30px 20px 28px 0;
+	}
+	&__box-title{
+		font-size: 20px;
+		line-height: 28px;
+		font-family: 'Gothamproe-Bold', sans-serif;
+		font-weight: 700;
+		margin-bottom: 13px;
+	}
+	&__box-text{
+		font-size: 16px;
+		line-height: 24px;
+	}
+}

@@ -3,13 +3,13 @@
 	background: linear-gradient(94.12deg, #6F41F4 17.08%, #582DD3 87.01%);
 	&__container{
 		display: flex;
-		align-items: center;
 		padding-top: 110px;
 	}
 	&__box{
 		color: #fff;
-		padding: 70px 40px 0 50px;
-		flex-basis: 620px;
+		padding: 50px 3% 0 4%;
+		flex: 1 1 630px;
+
 	}
 	&__title{
 		font-weight: 700;
@@ -19,7 +19,23 @@
 		margin-bottom: 12px;
 	}
 	&__text{
+		line-height: 30px;
 		margin-bottom: 18px;
-
+	}
+	&__btn{
+		color: #fff;
+		font-size: 16px;
+		display: inline-block;
+		padding: 17px 31px;
+		background-color: var(--cl-orange);
+	}
+	&__picture{
+		max-width: 640px;
+		align-items: flex-end;
+	}
+	&__img{
+		animation: zoom-in-zoom-out infinite 40s;
+		object-fit:cover;
+		max-width: 100%;
 	}
 }

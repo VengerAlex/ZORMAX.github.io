@@ -2,3 +2,9 @@
 @import "mixins";
 @import "fonts";
 @import "settings";
+
+.title{
+	font-family: 'Gothamproe-Bold', sans-serif;
+	font-size: 50px;
+	line-height: 50px;
+}

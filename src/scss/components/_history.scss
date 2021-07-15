@@ -1,0 +1,85 @@
+.history{
+	padding-bottom: 100px;
+	&__title{
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	&__list{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			width: 60%;
+			height: 1px;
+			background-color: rgba(0, 0, 0, 0.2);
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			top: 35%;
+			z-index: -1;
+		}
+	}
+	&__item{
+		text-align: center;
+		flex: 0 1 240px;
+		&:hover .history-box__circle{
+			transition: border  0.2s ease-in-out;
+			border: 1px solid var(--cl-orange);
+		}
+	}
+	&-box{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	&-box__circle{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 145px;
+		height: 145px;
+		border-radius: 100%;
+		background-color: rgb(255, 255, 255);
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+		margin-bottom: 17px;
+		transition: border  0.2s ease-in-out;
+	}
+	&-box__year{
+		font-family: 'Gothamproe-Bold', sans-serif;
+		display: inline-block;
+		font-size: 16px;
+		line-height: 24px;
+		position: relative;
+		padding-bottom: 6px;
+		&:before{
+			content: '';
+			position: absolute;
+			height: 2px;
+			width: 100%;
+			background-color: rgba(0, 0, 0, 0.2);
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+	&-box__text{
+		display: inline-block;
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+@keyframes zoom-in-zoom-out {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(1.2, 1.2);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
