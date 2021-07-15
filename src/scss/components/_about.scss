@@ -1,0 +1,25 @@
+.about{
+	min-height: 664px;
+	background: linear-gradient(94.12deg, #6F41F4 17.08%, #582DD3 87.01%);
+	&__container{
+		display: flex;
+		align-items: center;
+		padding-top: 110px;
+	}
+	&__box{
+		color: #fff;
+		padding: 70px 40px 0 50px;
+		flex-basis: 620px;
+	}
+	&__title{
+		font-weight: 700;
+		font-family: 'Gothamproe-Bold';
+		font-size: 35px;
+		line-height: 48px;
+		margin-bottom: 12px;
+	}
+	&__text{
+		margin-bottom: 18px;
+
+	}
+}

@@ -1,1 +1,14 @@
-@include font-face("Roboto-Thin", "../fonts/Roboto-Thin", 300, normal);
+@font-face {
+	font-family: 'Gothamproe-Bold';
+	src:  url('../fonts/gothampro-bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Gothamproe-Light';
+	src:  url('../fonts/gothampro-light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}

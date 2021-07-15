@@ -1,0 +1,142 @@
+.header{
+	&__container{
+		display: flex;
+		align-items: center;
+		min-height: 90px;
+	}
+	&__logo{
+		margin-right: 90px;
+		margin-top: 2px;
+	}
+}
+.menu{
+	&__list{
+		display: flex;
+		align-items: center;
+	}
+	&__item{
+		& + &{
+			margin-left: 65px;
+		}
+	}
+	&__item-link{
+		font-weight: 700;
+		font-family: 'Gothamproe-Bold';
+		font-size: 20px;
+		position: relative;
+		transition: width 0.2s ease-in;
+		&:hover{
+			color:  var(--cl-orange);
+			transition: width 0.2s ease-in;
+			&:after{
+				width: 100%;
+				transition: width 0.2s ease-in;
+			}
+			&:before{
+				width: 100%;
+				transition: width 0.2s ease-in;
+			}
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			top: -8px;
+			left: 0;
+			height: 1px;
+			width: 0;
+			background-color: var(--cl-orange);
+			transition: width 0.2s ease-in;
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			height: 1px;
+			width: 0;
+			background-color: var(--cl-orange);
+			left: auto;
+			right: 0;
+			bottom: -8px;
+			transition: width 0.2s ease-in;
+		}
+	}
+}
+.lang-menu{
+	margin-left: auto;
+	&__list{
+		background-color: rgb(255, 255, 255);
+		border: 1px solid #f8f8f8;
+		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+		border-radius: 9px;
+		margin-top: -1px;
+		position: absolute;
+		display: none;
+	}
+	&__item{
+		display: flex;
+	}
+	&__link{
+		width: 150px;
+		display: block;
+		padding: 5px 10px;
+		font-size: 15px;
+		font-weight: 700;
+		font-family: 'Gothamproe-Bold';
+		transition: color 0.2s ease-in;
+		&:hover{
+		transition: color 0.2s ease-in;
+			color:  var(--cl-orange);
+		}
+		&:before{
+			content: '';
+			display: inline-block;
+			width: 35px;
+			height: 42px;
+			margin-right: 1px;
+			vertical-align: middle;
+		}
+		&--german{
+			background-image: url(../img/german-flag.png);
+			background-repeat: no-repeat;
+			background-position: left;
+		}
+		&--french{
+			background-image: url(../img/french-flag.png);
+			background-repeat: no-repeat;
+			background-position: left;
+		}
+		&--spanish{
+			background-image: url(../img/spanish-flag.png);
+			background-repeat: no-repeat;
+			background-position: left;
+		}
+	}
+}
+.selected-lang{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100px;
+	font-size: 15px;
+	font-weight: 700;
+	font-family: 'Gothamproe-Bold';
+	padding-bottom: 10px;
+	transition: color 0.2s ease-in;
+	&:hover{
+		color:  var(--cl-orange);
+		transition: color 0.2s ease-in;
+	}
+	&:before{
+		content: '';
+		display: block;
+		width: 35px;
+		height: 32px;
+		background-image: url(../img/rus-flag.png);
+		background-repeat: no-repeat;
+	}
+
+}
+.lang-menu{
+	&:hover .lang-menu__list{
+		display: block;
+	}
+}
