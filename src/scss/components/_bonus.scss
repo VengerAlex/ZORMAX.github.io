@@ -1,0 +1,38 @@
+.bonus{
+	padding-bottom: 100px;
+	&__title{
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	&__list{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-gap: 10% 2%;
+	}
+	&__item{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 240px;
+		text-align: center;
+	}
+	&__box-square{
+		width: 120px;
+		height: 120px;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		margin-bottom: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		svg{
+			width: 70px;
+			height: 70px;
+		}
+	}
+	&__box-text{
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
