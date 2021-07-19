@@ -6,3 +6,18 @@
 @import "./components/history";
 @import "./components/feature";
 @import "./components/bonus";
+@import "./components/parallax";
+@import "./components/contacts";
+@import "./components/footer";
+
+.progressbar{
+	height: 10px;
+	width: 100%;
+	background-color: var(--cl-orange);
+	position: fixed;
+	&__line{
+		height: 10px;
+		background-color: #6947c7;
+		z-index: 200;
+	}
+}

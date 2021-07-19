@@ -1,0 +1,29 @@
+.contacts{
+	padding: 100px 0;
+	&__wrapper{
+		padding: 60px 0 120px;
+		background-image: url(../img/contact.png);
+		background-repeat: no-repeat;
+		background-position: left;
+		background-size: 900/1200 * 100%;
+	}
+	&__box{
+		margin: 0 70px 0 auto;
+		display: block;
+		background-color:rgb(255, 255, 255);
+		padding: 50px 14px 62px 62px;
+		max-width: 520px;
+	}
+	&__title{
+		margin-bottom: 36px;
+	}
+	&-row__link{
+		margin-left: 50px;
+		font-family: 'Gothamproe-Bold', sans-serif;
+		font-size: 22px;
+		line-height: 25px;
+		&--mail{
+			padding-left: 38px;
+		}
+	}
+}

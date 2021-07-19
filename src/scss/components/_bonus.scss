@@ -16,6 +16,12 @@
 		align-items: center;
 		max-width: 240px;
 		text-align: center;
+		&:hover{
+			.bonus__box-square{
+				transition: border 1s;
+				border: 1px solid var(--cl-orange);
+			}
+		}
 	}
 	&__box-square{
 		width: 120px;
@@ -26,6 +32,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		transition: border 1s;
 		svg{
 			width: 70px;
 			height: 70px;
