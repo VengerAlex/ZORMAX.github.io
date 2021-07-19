@@ -25,6 +25,29 @@
 		font-size: 20px;
 		position: relative;
 		transition: width 0.2s ease-in;
+		&--active{
+			&:after{
+				content: '';
+				position: absolute;
+				top: -8px;
+				left: 0;
+				height: 1px;
+				width: 1;
+				background-color: var(--cl-orange);
+				transition: width 0.2s ease-in;
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				height: 1px;
+				width: 0;
+				background-color: var(--cl-orange);
+				left: auto;
+				right: 0;
+				bottom: -8px;
+				transition: width 0.2s ease-in;
+			}
+		}
 		&:hover{
 			color:  var(--cl-orange);
 			transition: width 0.2s ease-in;

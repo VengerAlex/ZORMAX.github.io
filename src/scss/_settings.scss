@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
 }
 
 *,
@@ -15,6 +17,7 @@ body {
   font-size: 20px;
   counter-reset: section;
 }
+
 
 img {
   max-width: 100%;

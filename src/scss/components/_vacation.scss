@@ -1,0 +1,98 @@
+.vacation{
+	padding-top: 70px;
+	&__title{
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	&__descr{
+		margin-bottom: 10px;
+		display: block;
+		text-align: center;
+	}
+	&__text{
+		line-height: 28px;
+		max-width: 720px;
+		text-align: center;
+		margin: 0 auto;
+		span{
+			color: #0368FF;
+			border-bottom: 1px solid #0368FF;
+		}
+	}
+}
+.tabs{
+	position: relative;
+	&__list{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__item{
+		& + &{
+			margin-left: 53px;
+		}
+	}
+	&__btn{
+		padding: 0;
+		border: none;
+		cursor: pointer;
+		line-height: 25px;
+		font-size: 20px;
+		background-color: transparent;
+		&--active{
+			color: var(--cl-orange);
+			pointer-events: none;
+			font-weight: 700;
+		}
+	}
+	&__content{
+		background-color: #fff;
+		display: none;
+		&--active{
+			display: block;
+		}
+	}
+}
+.content{
+	&__block-lits{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	&__block-item{
+		padding: 25px 20px;
+		width: 330px;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+		&:hover{
+		box-shadow: 0px 0px 2px var(--cl-orange);
+		}	
+	}
+	&__block-pos{
+		font-family: 'Gothamproe-Bold', sans-serif;
+		line-height: 25px;
+		display: inline-block;
+		margin-bottom: 3px;
+	}
+	&__block-row{
+		span{
+			font-family: 'Gothamproe-Bold', sans-serif;
+		}
+		margin-bottom: 13px;
+	}
+	&__block-more{
+		font-family: 'Gothamproe-Bold', sans-serif;
+		color: var(--cl-orange);
+		position: relative;
+		&:before{
+			position: absolute;
+			content: '';
+			background-image: url(../img/arr-left.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 50px;
+			height: 15px;
+			right: -40px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+}
